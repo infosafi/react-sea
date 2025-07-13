@@ -6,11 +6,12 @@ on:
   pull-requests:
     branches:
       - master
+
 jobs:
   build-react-app:
-  runs-on: ubuntu-latest
-  steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-    - name: run my react
-      run: ls -l
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: run my react
+        run: ls -l
